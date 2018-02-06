@@ -1,13 +1,21 @@
 import { NgModule } from '@angular/core';
-import { MatButtonModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatIconModule,
+} from '@angular/material';
 
+/**
+ * The Material Module is used to cluster all Angular Material Components imports
+ */
 @NgModule({
   imports: [
     // MatModules
     MatButtonModule,
+    MatIconModule
   ],
   exports: [
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ]
 })
 export class MaterialModule {}
